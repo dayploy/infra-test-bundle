@@ -1,0 +1,23 @@
+{
+    "name": "dayploy/infra-test-bundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "psr-4": {
+            "Dayploy\\InfraTestBundle\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dayploy\\InfraTestBundle\\Tests\\": "tests/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "php": "^8.2",
+        "symfony/framework-bundle": "^7.2"
+    },
+    "require-dev": {
+        "nyholm/symfony-bundle-test": "^3.0",
+        "phpunit/phpunit": "^10.3"
+    }
+}

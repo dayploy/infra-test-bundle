@@ -1,0 +1,8 @@
+services:
+    Dayploy\InfraTestBundle\Command\GenerateWarningLogsCommand:
+        public: true
+        class: "Dayploy\\InfraTestBundle\\Command\\GenerateWarningLogsCommand"
+        arguments:
+            - '@logger'
+        tags:
+            - { name: 'console.command', command: 'infra:generate-warning-logs' }
